@@ -19,14 +19,26 @@
     <body>
         <div class="container-fluid">    
             <!--this is the navigation bar it should remain the smae on eaach page-->
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <ul class="nav">
-                    <a class="navbar-brand" href="index.html">FETCH </a>
-                    <a class="nav-link" href="#">Mission</a>
-                    <a class="nav-link" href="#">About Us</a>
-                    <a class="nav-link" href="userPage.html"> Hello username </a>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                  <a class="navbar-brand" href="index.html">FETCH</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="userPage.html"> Hello, Username </a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  </ul>
             <!---->
             <!---->
             <div class="jumbotron">
