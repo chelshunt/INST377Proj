@@ -44,16 +44,17 @@
     </head>
     <body>
         <div class="container-fluid bg-1 text-center">
-            <img src="IMG_8122.JPG" class="img-responsive img-circle margin" style="display: inline" alt="fetch logo" width="800" height="550">
+            <img src="IMG_8122.JPG" class="img-responsive img-circle margin" style="display: inline" alt="fetch logo" width="500" height="350">
         </div>
         <br>
         <div>
-            <form action="values.php" method="post">
-                <div class="input-group">
+            <form action="Fetch.php" method="post"> 
+              <div class = "col-xs-3 center-block"> 
+                <div class="input-group"> 
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                     <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-                    <button type="submit" btn btn-default><a href="index.php">Submit</a></button>
-                </div>
+                    <button type="submit" btn btn-default><a href="homepg.php">Submit</a></button>
+              </div> </div>
             </form>
         </div>
     </body>

@@ -51,41 +51,43 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">FETCH</a>
+      <a class="navbar-brand" href="index.php">FETCH</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Mission</a></li>
+        <li class="active"><a href="index.php">Home</a></li>
+        <li><a href="Productpg.php">All Posts</a></li>
         <li><a href="#">About Us</a></li>
-        <li><a href="userP"> Hello, Username </a></li>
+        <li><a href="PersonalPost.php"> Your Posts </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="FETCH.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
 
-      <form class="navbar-form navbar-right" role="search">
+          <form class="navbar-form navbar-right" role="search">
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Search">
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
     </div>
-  </div>
-</nav>
+    </nav>
 
   
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="#">User Profile</a></p>
-      <p><a href="#">Your Posts</a></p>
+      <p><a href="PersonalPost.php">Your Posts</a></p>
       <p><a href="#">Link</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Welcome!</h1>
 
       <h3> User name HERE </h3>
+      <h4> Email: </h4> yadyaydyay@gmail.com
+      <br> 
+      <h4> : </h4> 
       <button type="button" class="btn btn-info">Write a Post</button>
    <!--  </div>
     <div class="col-sm-2 sidenav">
