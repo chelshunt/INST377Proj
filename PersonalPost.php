@@ -93,11 +93,13 @@ if (mysqli_num_rows($result) > 0) {
       <a class="navbar-brand" href="homepg.php">FETCH</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.php">Home</a></li>
+      <ul class="nav  navbar-nav">
+        <li><a href="index.php">Home</a></li>
         <li><a href="Productpg.php">All Posts</a></li>
         <li><a href="#">About Us</a></li>
-        <li><a href="PersonalPost.php"> Your Posts </a></li>
+        <li class = "active"><a href="PersonalPost.php"> Your Posts </a></li>
+          <li class="nav nav-pills"><a class="nav-link active" href="#">Write a Post</a>
+          </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="FETCH.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
