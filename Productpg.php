@@ -61,8 +61,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.php">Home</a></li>
-        <li><a href="Productpg.php">All Posts</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li class="active"><a href="Productpg.php">All Posts</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="PersonalPost.php"> Your Post </a></li>
       </ul>
