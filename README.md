@@ -18,7 +18,7 @@ Chelsea Hunt //
 Email: 
 
 Nabintta Coulibaly //
-Email:
+Email:finabibi139@gmail.com
 
 Seyoum Demssie //
 Email:
