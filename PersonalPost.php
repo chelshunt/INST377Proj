@@ -54,28 +54,32 @@
 $server = "localhost";
 $username = "root";
 $password = "root";
-$db = "sakila";
-$port = 8889;
+$db = "fetch";
 
-$conn = mysqli_connect($server, $username, $password, $db, $port);
+
+$conn = mysqli_connect($server, $username, $password, $db);
 
 //Gets 3 customers ** change this to a query that shows all post that a specifc user posts
- $sql = "SELECT c.first_name, c.last_name, c.email, a.address, ci.city FROM customer as c 
-JOIN address AS a 
-ON c.address_id = a.address_id 
-JOIN city AS ci ON a.city_id = ci.city_id
-ORDER BY c.last_name LIMIT 3";
+ $sql = "SELECT * FROM `fetch`.user_has_skin_products
+where user_has_skin_products.User_id = 3
+union
+SELECT * FROM `fetch`.user_has_hair_products
+where user_has_hair_products.User_id = 3
+;
+";
 
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {   
     while($row = mysqli_fetch_assoc($result)) {
-         $first_name = $row["first_name"];
-        $last_name=  $row['last_name'];
-        $email=  $row['email'];
-        $address =  $row['address'];
-        $city = $row['city'] ;
-    
+        $Skin_post_id = $row["Skin_post_id"];
+        $User_id=  $row['User_id'];
+        $Skin_products_id=  $row['Skin_products_id'];
+        $Skin_product_name =  $row['Skin_product_name'];
+        $Skin_tag_name = $row['Skin_tag_name'] ;
+        $Review = $row['Review'] ;
+        $Ratings = $row['Ratings'] ;
+   // echo $Skin_products_id;
      }
           
  }
@@ -110,11 +114,11 @@ if (mysqli_num_rows($result) > 0) {
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
     </div>
-    </nav> 
+      </nav>
   
   <h1> These are all your posts </h1>
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <?php $i=1; foreach ($result as $acontent) { ?>
+        <?php $i=1; foreach ($row as $acontent) { ?>
            <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading<?php echo $i; ?>">
 

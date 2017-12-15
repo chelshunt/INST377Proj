@@ -10,7 +10,8 @@ $email = $_POST["email"];
 $server = "localhost";
 $username = "root";
 $password = "root";
-$db = "sakila";
+$db = "fetch";
+
 
  $conn = mysqli_connect($server, $username, $password, $db);
 

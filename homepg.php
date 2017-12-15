@@ -67,12 +67,12 @@
         <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
 
-          <form class="navbar-form navbar-right" role="search">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+        <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+        </form>
     </div>
     </nav>
   
