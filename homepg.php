@@ -54,14 +54,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.php">FETCH</a>
+      <a class="navbar-brand" href="homepg.php">FETCH</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="homepg.php">Home</a></li>
-        <li><a href="Productpg.php">All Posts</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
         <li><a href="PersonalPost.php"> Your Posts </a></li>
+        <li class="nav nav-pills"><a class="nav-link active" href="#">Write a Post</a>
+          </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -98,13 +99,14 @@
                     <div class="col-md-6">
                         <div class="well">
                             <p>Skin</p>
-                            <img src="http://www.junelaboratories.com/wp-content/uploads/icon-skin-care.png" alt="artboard2" width="350" height="350">
+                            <a href="HairProductpg.php"><img src="http://www.junelaboratories.com/wp-content/uploads/icon-skin-care.png" alt="artboard2" width="350" height="350"> </a>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="well">
                             <p>Hair</p>
-                            <img src="https://previews.123rf.com/images/keltt/keltt1402/keltt140200021/26056086-red-scissors-and-hair-style-hair-care-icon-Stock-Vector.jpg" alt="artboard2" width="350" height="350">
+                            <a href="SkinProductpg.php"><img src="https://previews.123rf.com/images/keltt/keltt1402/keltt140200021/26056086-red-scissors-and-hair-style-hair-care-icon-Stock-Vector.jpg" alt="artboard2" width="350" height="350">
+                            </a>
                         </div>
                     </div>
                     <br>

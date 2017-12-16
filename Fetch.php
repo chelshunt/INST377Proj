@@ -1,24 +1,28 @@
-<?php
-
-//code to revceive the input data
-
-$email = $_POST["email"];
-
-
-
-
+      <?php
 $server = "localhost";
 $username = "root";
 $password = "root";
 $db = "fetch";
 
 
- $conn = mysqli_connect($server, $username, $password, $db);
+$conn = mysqli_connect($server, $username, $password, $db);
 
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-echo "Connected successfully<br><br>";
+
+
+// Receving the submitted data
+$email = $_POST["email"];
+
+// You need to save the data into the database. Write an INSERT query here.
+
+$sql = "INSERT INTO user (email) VALUES ('$email');";
+query_to_db($conn, $sql);
+
+console.log("$email");
+mysqli_close($conn);
+
+
+?>
+
 
 
 

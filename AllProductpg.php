@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
+<head>
+  <title>All Posts</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-
-  <title>Your Post</title>
-  <style>
+  <style>    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -25,10 +29,6 @@
       padding-top: 20px;
       background-color: #f1f1f1;
       height: 100%;
-    }
-
-    .panel-group, h1{
-      padding: 20px;
     }
     
     /* Set black background color, white text and some padding */
@@ -49,23 +49,21 @@
   </style>
     </head>
     <body>
-
-        <?php
+        
+<?php
 $server = "localhost";
 $username = "root";
 $password = "root";
 $db = "fetch";
 
-$email = $_POST["email"];
 
 $conn = mysqli_connect($server, $username, $password, $db);
 
 //Gets 3 customers ** change this to a query that shows all post that a specifc user posts
- $sql = "SELECT * FROM `fetch`.user_has_skin_products
-where user_has_skin_products.User_id = 3
+        //makae a query so that there are getting the stuff from just the user has hair table so it can fill the same idea for the personal posts page
+ $sql = $sql = "SELECT * FROM `fetch`.user_has_skin_products
 union
-SELECT * FROM `fetch`.user_has_hair_products
-where user_has_hair_products.User_id = 3;";
+SELECT * FROM `fetch`.user_has_hair_products";
 
 $result = mysqli_query($conn, $sql);
 
@@ -78,13 +76,13 @@ if (mysqli_num_rows($result) > 0) {
         $Skin_tag_name = $row["Skin_tag_name"] ;
         $Review = $row["Review"] ;
         $Ratings = $row["Ratings"] ;
-   echo $email;
+   // echo $Skin_products_id;
      }
           
  }
 ?>
-
-<nav class="navbar navbar-inverse">
+        
+        <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -95,11 +93,11 @@ if (mysqli_num_rows($result) > 0) {
       <a class="navbar-brand" href="homepg.php">FETCH</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav  navbar-nav">
+      <ul class="nav navbar-nav">
         <li><a href="index.php">Home</a></li>
-        <li><a href="AboutUs.html">About Us</a></li>
-        <li class = "active"><a href="PersonalPost.php"> Your Posts </a></li>
-          <li class="nav nav-pills"><a class="nav-link active" href="#">Write a Post</a>
+        <li><a href="#">About Us</a></li>
+        <li><a href="PersonalPost.php"> Your Post </a></li>
+        <li class="nav nav-pills"><a class="nav-link active" href="#">Write a Post</a>
           </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -113,9 +111,9 @@ if (mysqli_num_rows($result) > 0) {
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
     </div>
-      </nav>
+    </nav>
   
-  <h1> These are all your posts <?php echo  $email; ?></h1>
+ <h1> These Are All Current Posts </h1>
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
         <?php $i=1; foreach ($result as $acontent) { ?>
@@ -146,6 +144,10 @@ if (mysqli_num_rows($result) > 0) {
                                 echo "<br>";                   
                                 echo "Tag Name: ";
                                 echo $acontent['Skin_tag_name'];
+                                echo "<br>"; 
+                                echo "Created By: ";
+                                echo $acontent['User_id'];
+                                
                             ?>
                         </h5>
                     </div>
@@ -154,8 +156,5 @@ if (mysqli_num_rows($result) > 0) {
         <?php $i++; } ?>
         </div>
 
-
- </body>
-    
+</body>
 </html>
-        
