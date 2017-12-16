@@ -45,7 +45,7 @@
     <body>
 
         <div class="container-fluid bg-1 text-center">
-            <img src="IMG_8122.JPG" class="img-responsive img-circle margin" style="display: inline" alt="fetch logo" width="500" height="350">
+            <img src="IMG_8122.jpg" class="img-responsive img-circle margin" style="display: inline" alt="fetch logo" width="500" height="350">
         </div>
         <br>
         <div>
