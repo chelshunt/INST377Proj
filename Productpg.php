@@ -82,7 +82,7 @@ if (mysqli_num_rows($result) > 0) {
  }
 ?>
         
-        <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -96,27 +96,28 @@ if (mysqli_num_rows($result) > 0) {
       <ul class="nav navbar-nav">
         <li><a href="index.php">Home</a></li>
         <li class="active"><a href="Productpg.php">All Posts</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
         <li><a href="PersonalPost.php"> Your Post </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="FETCH.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
 
-          <form class="navbar-form navbar-right" role="search">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+      <form class="navbar-form navbar-right" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
-    </nav>
+  </div>
+</nav>
   
 <div class="container text-center">    
   <div class="row">
     <div class="col-sm-3 well">
       <div class="well">
-        <p><a href="#">My Profile</a></p>
+        <p><a href="userPage.php">My Profile</a></p>
         <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
       </div>
       <div class="well">

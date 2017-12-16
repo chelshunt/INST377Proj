@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -46,7 +43,7 @@
     <body>
 
 
-        <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -60,11 +57,11 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="homepg.php">Home</a></li>
         <li><a href="Productpg.php">All Posts</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="PersonalPost.php"> Your Posts </a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="PersonalPost.php">Your Posts</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
       </ul>
 
         <form class="navbar-form navbar-right" role="search">
@@ -74,7 +71,8 @@
               <button type="submit" class="btn btn-default">Submit</button>
         </form>
     </div>
-    </nav>
+  </div>
+</nav>
   
 
             <!---->

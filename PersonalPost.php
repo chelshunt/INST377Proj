@@ -98,7 +98,7 @@ if (mysqli_num_rows($result) > 0) {
       <ul class="nav  navbar-nav">
         <li><a href="index.php">Home</a></li>
         <li><a href="Productpg.php">All Posts</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
         <li class = "active"><a href="PersonalPost.php"> Your Posts </a></li>
           <li class="nav nav-pills"><a class="nav-link active" href="#">Write a Post</a>
           </li>
@@ -107,14 +107,15 @@ if (mysqli_num_rows($result) > 0) {
         <li><a href="FETCH.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
 
-          <form class="navbar-form navbar-right" role="search">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+      <form class="navbar-form navbar-right" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
-      </nav>
+  </div>
+</nav>
   
   <h1> These are all your posts <?php echo  $email; ?></h1>
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
