@@ -57,27 +57,28 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Home</a></li>
         <li><a href="Productpg.php">All Posts</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
         <li><a href="PersonalPost.php"> Your Posts </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="FETCH.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
 
-          <form class="navbar-form navbar-right" role="search">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search">
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
-    </nav>
+  </div>
+</nav>
 
   
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">User Profile</a></p>
+      <p><a href="userPage.php">User Profile</a></p>
       <p><a href="PersonalPost.php">Your Posts</a></p>
       <p><a href="#">Link</a></p>
     </div>
