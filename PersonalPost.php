@@ -64,26 +64,23 @@ $conn = mysqli_connect($server, $username, $password, $db);
 where user_has_skin_products.User_id = 3
 union
 SELECT * FROM `fetch`.user_has_hair_products
-where user_has_hair_products.User_id = 3
-;
-";
+where user_has_hair_products.User_id = 3;";
 
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {   
     while($row = mysqli_fetch_assoc($result)) {
         $Skin_post_id = $row["Skin_post_id"];
-        $User_id=  $row['User_id'];
-        $Skin_products_id=  $row['Skin_products_id'];
+        $User_id=  $row["User_id"];
+        $Skin_products_id=  $row["Skin_products_id"];
         $Skin_product_name =  $row['Skin_product_name'];
-        $Skin_tag_name = $row['Skin_tag_name'] ;
-        $Review = $row['Review'] ;
-        $Ratings = $row['Ratings'] ;
+        $Skin_tag_name = $row["Skin_tag_name"] ;
+        $Review = $row["Review"] ;
+        $Ratings = $row["Ratings"] ;
    // echo $Skin_products_id;
      }
           
  }
-
 ?>
 
 <nav class="navbar navbar-inverse">
@@ -120,7 +117,11 @@ if (mysqli_num_rows($result) > 0) {
   
   <h1> These are all your posts </h1>
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<<<<<<< HEAD
         <?php $i=1; foreach ($rersult as $acontent) { ?>
+=======
+        <?php $i=1; foreach ($result as $acontent) { ?>
+>>>>>>> 404cb4a91fdcde4a54ec7397c0172a62d8713e09
            <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading<?php echo $i; ?>">
 
@@ -129,7 +130,7 @@ if (mysqli_num_rows($result) > 0) {
                         <a <?php if($i>1) echo 'class="collapsed"'; ?> role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i; ?>" aria-expanded="<?php echo ($i==1) ? 'true':'false'; ?>true" aria-controls="collapse<?php echo $i; ?>">
 
                           <!-- insert what you want the heading from db to print -->
-                            <?php echo $acontent['first_name']; ?>
+                            <?php echo $acontent['Skin_product_name']; ?>
                         </a>
                     </h4>
                 </div>
