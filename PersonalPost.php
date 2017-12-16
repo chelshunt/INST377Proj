@@ -120,7 +120,7 @@ if (mysqli_num_rows($result) > 0) {
   
   <h1> These are all your posts </h1>
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <?php $i=1; foreach ($row as $acontent) { ?>
+        <?php $i=1; foreach ($rersult as $acontent) { ?>
            <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading<?php echo $i; ?>">
 
@@ -138,7 +138,7 @@ if (mysqli_num_rows($result) > 0) {
                   <!-- this is the details section -->
                     <div class="panel-body">
                       <!--  Insert in the echo what you want from the db info that you want included -->
-                        <?php echo $acontent['address'] ,  $acontent['email'] ,$acontent['city'] ; ?>
+                        <?php echo $acontent['Review']; ?>
                     </div>
                 </div>
             </div> 
