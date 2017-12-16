@@ -56,6 +56,7 @@ $username = "root";
 $password = "root";
 $db = "fetch";
 
+$email = $_POST["email"];
 
 $conn = mysqli_connect($server, $username, $password, $db);
 
@@ -77,7 +78,7 @@ if (mysqli_num_rows($result) > 0) {
         $Skin_tag_name = $row["Skin_tag_name"] ;
         $Review = $row["Review"] ;
         $Ratings = $row["Ratings"] ;
-   // echo $Skin_products_id;
+   echo $email;
      }
           
  }
@@ -115,13 +116,11 @@ if (mysqli_num_rows($result) > 0) {
     </div>
       </nav>
   
-  <h1> These are all your posts </h1>
+  <h1> These are all your posts <?php echo  $email; ?></h1>
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-<<<<<<< HEAD
-        <?php $i=1; foreach ($rersult as $acontent) { ?>
-=======
+
         <?php $i=1; foreach ($result as $acontent) { ?>
->>>>>>> 404cb4a91fdcde4a54ec7397c0172a62d8713e09
+
            <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading<?php echo $i; ?>">
 
@@ -139,7 +138,17 @@ if (mysqli_num_rows($result) > 0) {
                   <!-- this is the details section -->
                     <div class="panel-body">
                       <!--  Insert in the echo what you want from the db info that you want included -->
-                        <?php echo $acontent['Review']; ?>
+                        <h5>
+                            <?php 
+                                echo $acontent['Review'];
+                                echo "<br>";                    
+                                echo "Rating: ";
+                                echo $acontent['Ratings'];
+                                echo "<br>";                   
+                                echo "Tag Name: ";
+                                echo $acontent['Skin_tag_name'];
+                            ?>
+                        </h5>
                     </div>
                 </div>
             </div> 
@@ -150,3 +159,4 @@ if (mysqli_num_rows($result) > 0) {
  </body>
     
 </html>
+        

@@ -49,6 +49,39 @@
   </style>
     </head>
     <body>
+        
+<?php
+$server = "localhost";
+$username = "root";
+$password = "root";
+$db = "fetch";
+
+
+$conn = mysqli_connect($server, $username, $password, $db);
+
+//Gets 3 customers ** change this to a query that shows all post that a specifc user posts
+        //makae a query so that there are getting the stuff from just the user has hair table so it can fill the same idea for the personal posts page
+ $sql = "SELECT * FROM `fetch`.user_has_skin_products as s
+join users on s.User_id = users.User_id
+order by s.Skin_tag_name;";
+
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {   
+    while($row = mysqli_fetch_assoc($result)) {
+        $Skin_post_id = $row["Skin_post_id"];
+        $User_id=  $row["User_id"];
+        $Skin_products_id=  $row["Skin_products_id"];
+        $Skin_product_name =  $row['Skin_product_name'];
+        $Skin_tag_name = $row["Skin_tag_name"] ;
+        $Review = $row["Review"] ;
+        $Ratings = $row["Ratings"] ;
+   // echo $Skin_products_id;
+     }
+          
+ }
+?>
+        
         <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
