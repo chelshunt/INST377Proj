@@ -56,16 +56,11 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="homepg.php">Home</a></li>
-<<<<<<< HEAD
+          <li><a href="Productpg.php">All Posts</a></li>
         <li><a href="AboutUs.html">About Us</a></li>
         <li><a href="PersonalPost.php"> Your Posts </a></li>
-        <li class="nav nav-pills"><a class="nav-link active" href="#">Write a Post</a>
+        <li class="nav nav-pills"><a class="nav-link active" href="WritePost.php">Write a Post</a>
           </li>
-=======
-        <li><a href="Productpg.php">All Posts</a></li>
-        <li><a href="AboutUs.html">About Us</a></li>
-        <li><a href="PersonalPost.php">Your Posts</a></li>
->>>>>>> f13892177c15186a824177a215ce9572f9f9d577
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>

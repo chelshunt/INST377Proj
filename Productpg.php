@@ -61,9 +61,9 @@ $conn = mysqli_connect($server, $username, $password, $db);
 
 //Gets 3 customers ** change this to a query that shows all post that a specifc user posts
         //makae a query so that there are getting the stuff from just the user has hair table so it can fill the same idea for the personal posts page
- $sql = "SELECT * FROM `fetch`.user_has_skin_products as s
-join users on s.User_id = users.User_id
-order by s.Skin_tag_name;";
+ $sql = "SELECT * FROM user_has_skin_products
+union 
+select * from user_has_hair_products;";
 
 $result = mysqli_query($conn, $sql);
 
