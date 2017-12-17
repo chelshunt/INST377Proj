@@ -98,13 +98,13 @@
                     <div class="col-md-6">
                         <div class="well">
                             <p>Skin</p>
-                            <a href="HairProductpg.php"><img src="http://www.junelaboratories.com/wp-content/uploads/icon-skin-care.png" alt="artboard2" width="350" height="350"> </a>
+                            <a href="SkinProductpg.php"><img src="http://www.junelaboratories.com/wp-content/uploads/icon-skin-care.png" alt="artboard2" width="350" height="350"> </a>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="well">
                             <p>Hair</p>
-                            <a href="SkinProductpg.php"><img src="https://previews.123rf.com/images/keltt/keltt1402/keltt140200021/26056086-red-scissors-and-hair-style-hair-care-icon-Stock-Vector.jpg" alt="artboard2" width="350" height="350">
+                            <a href="HairProductpg.php"><img src="https://previews.123rf.com/images/keltt/keltt1402/keltt140200021/26056086-red-scissors-and-hair-style-hair-care-icon-Stock-Vector.jpg" alt="artboard2" width="350" height="350">
                             </a>
                         </div>
                     </div>
