@@ -100,8 +100,6 @@ if (mysqli_num_rows($result) > 0) {
       <ul class="nav  navbar-nav">
         <li><a href="index.php">Home</a></li>
 
-        <li><a href="Productpg.php">All Posts</a></li>
-
         <li><a href="AboutUs.html">About Us</a></li>
         <li class = "active"><a href="PersonalPost.php"> Your Posts </a></li>
           <li class="nav nav-pills"><a class="nav-link active" href="WritePost.php">Write a Post</a>
@@ -127,10 +125,6 @@ if (mysqli_num_rows($result) > 0) {
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-    </div>
     <div class="col-sm-8 text-left"> 
         <form action="Fetch.php">
        <label for="comment">Review:</label>
