@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -28,7 +26,6 @@
       background-color: #f1f1f1;
       height: 100%;
     }
-
     .panel-group, h1{
       padding: 20px;
     }
@@ -57,20 +54,15 @@ $server = "localhost";
 $username = "root";
 $password = "root";
 $db = "fetch";
-
 $email = $_POST["email"];
-
 $conn = mysqli_connect($server, $username, $password, $db);
-
 //Gets 3 customers ** change this to a query that shows all post that a specifc user posts
  $sql = "SELECT * FROM `fetch`.user_has_skin_products
 where user_has_skin_products.User_id = 3
 union
 SELECT * FROM `fetch`.user_has_hair_products
 where user_has_hair_products.User_id = 3;";
-
 $result = mysqli_query($conn, $sql);
-
 if (mysqli_num_rows($result) > 0) {   
     while($row = mysqli_fetch_assoc($result)) {
         $Skin_post_id = $row["Skin_post_id"];
@@ -126,10 +118,6 @@ if (mysqli_num_rows($result) > 0) {
   <div class="row content">
     <div class="col-sm-2 sidenav">
     <div class="col-sm-8 text-left"> 
-         <p>Please Fill Out</p>
-      <p>Your Post.</p>
-      <p>Thank You!</p>
-    </div>
         <form action="Fetch.php">
        <label for="comment">Review:</label>
         <textarea class="form-control" rows="5" id="review"></textarea>
