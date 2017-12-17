@@ -126,7 +126,10 @@ if (mysqli_num_rows($result) > 0) {
   <div class="row content">
     <div class="col-sm-2 sidenav">
     <div class="col-sm-8 text-left"> 
-        </div>
+         <p>Please Fill Out</p>
+      <p>Your Post.</p>
+      <p>Thank You!</p>
+    </div>
         <form action="Fetch.php">
        <label for="comment">Review:</label>
         <textarea class="form-control" rows="5" id="review"></textarea>
